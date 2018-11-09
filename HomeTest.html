@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript" src="iAmNotGroot.js"></script>
+    
+
+</head>
+<body>
+    <script type="text/javascript">
+        
+        var inventaronElTree;
+
+        function setup() {
+            
+            inventaronElTree = new Tree();
+            for (var i = 0; i < 10; i++) {
+                inventaronElTree.addValue(floor(random(0, 100)));
+            }
+            console.log(inventaronElTree);
+            inventaronElTree.traverse();
+
+            var result = inventaronElTree.search(10);
+            if (result == null) {
+                console.log('not found');
+            } else {
+                console.log(result);
+            }
+
+            
+        }
+
+        alert("no aaaaanda");
+
+    </script>
+</body>
+</html>
